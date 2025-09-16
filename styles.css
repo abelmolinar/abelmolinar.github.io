@@ -23,7 +23,8 @@ body{
     align-items: center;
     box-sizing: border-box;
     background-color: var(--grey);
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin: 25px auto 30px;
     height: 100px;
     font-size: 1.5rem;
@@ -35,7 +36,8 @@ body{
     justify-content: center;
     background-color: var(--grey);
     align-items: left;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     box-sizing: border-box; /* This makes it so the padding is included in the width, i.e. no need to do annoying math */
     padding: 10px;
     margin: 0 auto 0;
