@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abel Molinar</title>
+    <title>Abel Molinar - Personal Website</title>
      <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
         <div class="header-div">
-            <h1>Abel Molinar</h1> 
+            <div class="logo">Abel Molinar</div>
+            <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href="#contact">Resources</a></li> -->
+            </ul>
         </div>
     </header>
     <main id="main">
-        <section>
-            <div class="brief-description">
+        <section id="about">
+            <div class="container">
+                <h1>About Me</h1>
                 <p>Hello! I'm Abel Molinar, a PhD student at the University of New Mexico. I am working with Dr. Wenbin Wan at the Optimization and Estimation Lab (<a class="link" id="link" href="https://one.unm.edu/" target="_blank">ONELab</a>)
-                    as a National Science Foundation Graduate Research Fellow.</p>
-                    <p>My research interests are broadly about autonomous systems, including state estimation, controls, path planning, and machine learning.</p>
+                    as a National Science Foundation Graduate Research Fellow. I received my BS in Mechanical Engineering from UNM in the spring of 2025.</p>
+                    <p>My research interests are broadly about autonomous systems with a focus on state estimation and sensor fusion. However, I am also exploring topics such as machine learning, control systems, and path planning with the 
+                        hope of integrating some of these topics into my PhD work.
+                    </p>
                 </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h1 class="center-h1">Projects</h1>
+                <h2>Autonomous System in Unity</h2>
+                <p>As part of my Undergraduate Honors Thesis, I created an autonomous system simulation software framework connecting Python and Unity Engine. Using sockets, I was able to get a spherical physics object in Unity to communicate with Python to send 
+                    information back and forth so that the sphere could be driven to some desired target coordinate. The figure below shows the autonomous system circuit design, with the blue block signifying execution in Unity and the red blocks signifying execution in Python.
+                </p>
+                <img src="Images/ControlDiagram.jpg" class="control-diagram" alt="Autonomous System Diagram">
+                <div class="img-caption">
+                    <p>Figure: Autonomous System Diagram.</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>
 </html>
-
