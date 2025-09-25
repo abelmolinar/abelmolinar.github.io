@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-links a:hover{
-    color: red;
+    color: crimson;
 }
 
 .container{
@@ -81,6 +81,7 @@ nav {
 
 .container h1{
     text-align: center;
+    margin-top: 0;
     margin-bottom: 0px;
 }
 
@@ -92,6 +93,41 @@ nav {
 
 .container p{
     margin-bottom:15px;
+}
+
+.container :first-child{
+    margin-top: 10px !important;
+}
+/* !important is there to force container top and bottom content margins to remain the same no matter the element */
+.container :last-child{
+    margin-bottom:10px !important;
+}
+
+.red-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.red-button:hover {
+    background-color: crimson;
+}
+
+
+.h2-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.h2-link:hover h2{
+    color: lightcoral;
 }
 
 .control-diagram{
@@ -109,6 +145,33 @@ nav {
     color: lightcoral;
 }
 
+.social-media-links a{
+    text-decoration: none;
+    color: white;
+}
+.social-media-links a:hover{
+    color: crimson;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--grey);
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer :first-child{
+    margin-top: 10px !important;
+}
+/* !important is there to force container top and bottom content margins to remain the same no matter the element */
+.footer :last-child{
+    margin-bottom:10px !important;
+}
 
 
 /* Responsive design */
