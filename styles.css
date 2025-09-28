@@ -1,6 +1,10 @@
 :root {
+    --white: rgb(255, 255, 255);
     --dark-black: rgba(0, 0, 0, 0.85);
     --grey: rgba(51, 51, 51, 1);
+    --red: rgb(255, 0, 0);
+    --crimson: rgb(220, 20, 60);
+    --lightcoral: rgb(240, 128, 128);
 }
 
 header{
@@ -10,7 +14,7 @@ header{
 }
 
 h1, h2, p{
-    color: white;
+    color: var(--white);
 }
 
 body{
@@ -31,7 +35,7 @@ body{
 }
 
 .logo{
-    color: white;
+    color: var(--white);
     font-weight: bold;
     font-size: 2rem;
 }
@@ -55,11 +59,11 @@ nav {
 
 .nav-links a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .nav-links a:hover{
-    color: crimson;
+    color: var(--crimson);
 }
 
 .container{
@@ -92,7 +96,8 @@ nav {
 }
 
 .container p{
-    margin-bottom:15px;
+    margin-top: 0px;
+    margin-bottom:10px;
 }
 
 .container :first-child{
@@ -106,8 +111,8 @@ nav {
 .red-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: red;
-    color: white;
+    background-color: var(--red);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
     border-radius: 25px;
@@ -117,17 +122,7 @@ nav {
 }
 
 .red-button:hover {
-    background-color: crimson;
-}
-
-
-.h2-link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.h2-link:hover h2{
-    color: lightcoral;
+    background-color: var(--crimson);
 }
 
 .control-diagram{
@@ -136,21 +131,23 @@ nav {
 
 .img-caption{
     margin: -10px 0 15px 0;
+    text-align: center;
 }
 
-.link{
-    color: white;
+.link, .link h2{
+    color: var(--white);
 }
-.link:hover{
-    color: lightcoral;
+.link:hover, .link:hover h2{
+    color: var(--lightcoral);
+    text-decoration-color: var(--lightcoral);
 }
 
 .social-media-links a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 .social-media-links a:hover{
-    color: crimson;
+    color: var(--crimson);
 }
 
 .footer {
