@@ -138,8 +138,8 @@ nav {
     color: var(--white);
 }
 .link:hover, .link:hover h2{
-    color: var(--lightcoral);
-    text-decoration-color: var(--lightcoral);
+    color: var(--crimson);
+    text-decoration-color: var(--crimson);
 }
 
 .social-media-links a{
