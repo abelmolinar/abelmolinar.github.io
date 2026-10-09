@@ -1,0 +1,15 @@
+# Hugo's build output — the action builds its own copy in the cloud
+public/
+
+# Hugo's generated cache — rebuilt automatically
+resources/
+
+# Small lock file Hugo creates when building
+.hugo_build.lock
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Only relevant if you ever ran npm install
+node_modules/
