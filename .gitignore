@@ -1,8 +1,8 @@
 # Hugo's build output — the action builds its own copy in the cloud
-public/
+/public/
 
 # Hugo's generated cache — rebuilt automatically
-resources/
+/resources/
 
 # Small lock file Hugo creates when building
 .hugo_build.lock
