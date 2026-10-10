@@ -1,3 +1,4 @@
+/* Primary colors in one-light theme */
 :root {
   --color-neutral: 255, 255, 255;
   --color-neutral-50: 248, 248, 248;
@@ -32,4 +33,10 @@
   --color-secondary-700: 22, 130, 92;
   --color-secondary-800: 12, 114, 79;
   --color-secondary-900: 0, 86, 52;
+}
+
+/* Cursor Highlighting */
+::selection {
+  background-color: rgb(var(--color-primary-600));
+  color: rgb(var(--color-neutral-50));
 }
